@@ -1,25 +1,29 @@
 import React from "react";
 import SearchPresenter from "./SearchPresenter";
-import { moviesApi, tvApi } from "../../API";
+import { moviesApi, tvApi } from "API";
 
 export default class extends React.Component {
   state = {
     movieResults: null,
     tvResults: null,
-    searchTerm: "code",
+    searchTerm: "",
     loading: false,
     error: null
   };
 
-  componentDidMount() {
-    this.handleSubmit();
-  }
-
-  handleSubmit = () => {
+  handleSubmit = event => {
+    event.preventDefault();
     const { searchTerm } = this.state;
     if (searchTerm !== "") {
       this.searchByTerm();
     }
+  };
+
+  updateTerm = event => {
+    const {
+      target: { value }
+    } = event;
+    this.setState({ searchTerm: value });
   };
 
   searchByTerm = async () => {
@@ -48,11 +52,13 @@ export default class extends React.Component {
     console.log(this.state);
     return (
       <SearchPresenter
-        movieResult={movieResults}
-        tvResult={tvResults}
+        movieResults={movieResults}
+        tvResults={tvResults}
         loading={loading}
         searchTerm={searchTerm}
         error={error}
+        handleSubmit={this.handleSubmit}
+        updateTerm={this.updateTerm}
       />
     );
   }
