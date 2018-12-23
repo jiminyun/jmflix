@@ -34,6 +34,19 @@ const Slink = styled(Link)`
   text-decoration: none;
 `;
 
+const Search = styled.div`
+  position: fixed;
+  right: 10px;
+`;
+const Input = styled.input`
+  all: unset;
+  font-size: 12px;
+  color: grey;
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 8px;
+`;
+
 export default withRouter(({ location: { pathname } }) => (
   <Header>
     {
@@ -50,5 +63,11 @@ export default withRouter(({ location: { pathname } }) => (
         <Slink to="/search">Search</Slink>
       </Item>
     </List>
+    <Search>
+      <span role="img" aria-label="search">
+        🔍
+      </span>
+      <Input value="" />
+    </Search>
   </Header>
 ));

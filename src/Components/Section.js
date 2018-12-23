@@ -11,6 +11,9 @@ const Container = styled.div`
 const Title = styled.span`
   font-size: 14px;
   font-weight: 600;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 5px;
 `;
 
 const Grid = styled.div`
