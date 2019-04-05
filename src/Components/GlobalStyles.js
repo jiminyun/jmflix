@@ -7,6 +7,11 @@ a{
     text.decoration:none;
     color:Inherit;
 }
+a:link {
+    text-decoration: none;
+  }
+  
+  
 *{
     box-sizing:border-box;
 }
@@ -15,7 +20,10 @@ body{
     font-size:14px;
     background-color:rgba(20, 20, 20, 1);
     color:white;
-    padding-top:80px;
+    padding-top:50px;
+    margin: auto;
+
+    
 }
 `;
 

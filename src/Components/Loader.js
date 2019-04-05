@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import logo from "./logo-valentines.png";
 
 const Container = styled.div`
   height: 100vh;
@@ -12,7 +13,7 @@ const Container = styled.div`
 export default () => (
   <Container>
     <span role="img" aria-label="Loading">
-      ⏰
+      <img src={logo} alt="loading" />
     </span>
   </Container>
 );

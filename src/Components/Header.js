@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
+import DropDown from "Components/DropDown";
 
 const Header = styled.div`
   position: fixed;
@@ -39,12 +40,8 @@ const Search = styled.div`
   right: 10px;
 `;
 const Input = styled.input`
-  all: unset;
-  font-size: 12px;
-  color: grey;
-  height: 30px;
-  border: 1px solid grey;
-  border-radius: 8px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 1px;
 `;
 
 export default withRouter(({ location: { pathname } }) => (
@@ -52,6 +49,7 @@ export default withRouter(({ location: { pathname } }) => (
     {
       //console.log(props)
     }
+
     <List>
       <Item current={pathname === "/"}>
         <Slink to="/">Movies</Slink>
@@ -63,11 +61,6 @@ export default withRouter(({ location: { pathname } }) => (
         <Slink to="/search">Search</Slink>
       </Item>
     </List>
-    <Search>
-      <span role="img" aria-label="search">
-        🔍
-      </span>
-      <Input value="" />
-    </Search>
+    <DropDown />
   </Header>
 ));

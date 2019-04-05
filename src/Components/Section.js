@@ -6,6 +6,7 @@ const Container = styled.div`
   :not(:last-child) {
     margin-bottom: 50px;
   }
+  margin-top: 10px;
 `;
 
 const Title = styled.span`
@@ -20,7 +21,7 @@ const Grid = styled.div`
   margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(auto-fill, 125px);
-  grid-gap: 25px;
+  grid-gap: 5px;
 `;
 
 const Section = ({ title, children }) => (
