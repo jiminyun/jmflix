@@ -20,13 +20,11 @@ npm start
 
 ## Demo
 
-https://www.youtube.com/watch?v=lD-jtnAyJI8
-
-[![Watch the video](https://img.youtube.com/vi/lD-jtnAyJI8/maxresdefault.jpg)](https://youtu.be/lD-jtnAyJI8)
+preparing
 
 ## Deploy
 
-https://fierce-reef-79253.herokuapp.com/
+https://jolly-hamilton-5b1b13.netlify.com/
 
 - Netlify
 
