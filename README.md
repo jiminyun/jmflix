@@ -1,15 +1,42 @@
-#jimflix
+# Popcorn Time
 
-Learing React and EX6 by building a Movie Discovry App.
+React Movie Discovry App.
 
-#SCREEN
+## Built With
 
-- [ ] HOME
-- [ ] TV SHOW
-- [ ] SEARCH
-- [ ] DETAIL
+- ES6
+- Styled Components
+- JS
+- API: Movie Database
 
-# API Verbs
+## Getting Started
 
-- [ ]
-- [ ]
+```
+git clone https://github.com/jiminyun/jmflix
+npm install
+
+npm start
+```
+
+## Demo
+
+https://www.youtube.com/watch?v=lD-jtnAyJI8
+
+[![Watch the video](https://img.youtube.com/vi/lD-jtnAyJI8/maxresdefault.jpg)](https://youtu.be/lD-jtnAyJI8)
+
+## Deploy
+
+https://fierce-reef-79253.herokuapp.com/
+
+- Netlify
+
+## Pages:
+
+- [x] Movie
+- [x] TV
+- [x] Detail
+- [x] Search
+
+## Additional Functionality
+
+- Infinite Scroll

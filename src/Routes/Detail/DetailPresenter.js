@@ -70,6 +70,12 @@ const Videos = styled.div`
   margin-top: 20px;
 `;
 
+const Link = styled.a``;
+const Icon = styled.img`
+  height: 25px;
+  margin: 0;
+`;
+
 const Video = styled.iframe``;
 const DetailPresenter = ({ result, loading, error, isMovie }) =>
   loading ? (
@@ -95,7 +101,12 @@ const DetailPresenter = ({ result, loading, error, isMovie }) =>
           <Title>
             {result.original_title
               ? result.original_title
-              : result.original_name}
+              : result.original_name}{" "}
+            {result.imdb_id && (
+              <Link href={`https://www.imdb.com/title/${result.imdb_id}`}>
+                <Icon src={require("../../assets/imdb.svg")} alt="imdb" />
+              </Link>
+            )}
           </Title>
           <ItemContainer>
             <Item>
@@ -114,6 +125,8 @@ const DetailPresenter = ({ result, loading, error, isMovie }) =>
                     : `${genre.name} / `
                 )}
             </Item>
+            <Divider>•</Divider>
+            <Item>{`⭐️ ${result.vote_average} / 10 `}</Item>
           </ItemContainer>
           <Overview>{result.overview}</Overview>
           <Videos>
