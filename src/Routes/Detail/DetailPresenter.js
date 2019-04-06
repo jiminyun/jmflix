@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Loader from "Components/Loader";
+import Helmet from "react-helmet";
 
 const Container = styled.div`
   height: calc(100vh - 50px);
@@ -79,9 +80,20 @@ const Icon = styled.img`
 const Video = styled.iframe``;
 const DetailPresenter = ({ result, loading, error, isMovie }) =>
   loading ? (
-    <Loader />
+    <>
+      <Helmet>
+        <title>Loading | Jmflix</title>
+      </Helmet>
+      <Loader />
+    </>
   ) : (
     <Container>
+      <Helmet>
+        <title>
+          {result.original_title ? result.original_title : result.original_name}{" "}
+          | Jmflix
+        </title>
+      </Helmet>
       <Backdrop
         bgImage={
           result.backdrop_path

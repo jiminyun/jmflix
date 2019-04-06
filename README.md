@@ -24,9 +24,7 @@ preparing
 
 ## Deploy
 
-https://jolly-hamilton-5b1b13.netlify.com/
-
-- Netlify
+Try it on [netlify](https://jolly-hamilton-5b1b13.netlify.com/#/)
 
 ## Pages:
 
