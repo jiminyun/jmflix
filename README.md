@@ -4,9 +4,9 @@ React Movie Discovry App.
 
 ## Built With
 
-- ES6
+- React
 - Styled Components
-- JS
+- ES6
 - API: Movie Database
 
 ## Getting Started
@@ -20,7 +20,9 @@ npm start
 
 ## Demo
 
-preparing
+https://www.youtube.com/watch?v=xXOvo0lne1o
+
+[![Watch the video](https://img.youtube.com/vi/xXOvo0lne1o/maxresdefault.jpg)](https://youtu.be/xXOvo0lne1o)
 
 ## Deploy
 
@@ -32,6 +34,16 @@ Try it on [netlify](https://jolly-hamilton-5b1b13.netlify.com/#/)
 - [x] TV
 - [x] Detail
 - [x] Search
+
+## API Verbs:
+
+- [x] Now playing (Movie)
+- [x] Upcoming (Movie)
+- [x] Top Rated (TV)
+- [x] Popular (TV)
+- [x] Airing Today (TV)
+- [x] Search (Movie, TV)
+- [x] Detail (Movie, TV)
 
 ## Additional Functionality
 
